@@ -12,6 +12,8 @@ require('./models');
 const operatorRoute = require('./routes/operatorsRoutes');
 app.use('/api/v1/operator',operatorRoute)
 
+const busesRoute = require('./routes/busesRoutes');
+app.use('/api/v1/admin/buses',busesRoute);
 
 const port = process.env.PORT;
 
