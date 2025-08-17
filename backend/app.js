@@ -6,6 +6,8 @@ app.use(express.json());
 
 require('dotenv').config();
 
+require('./models');
+
 
 const port = process.env.PORT;
 
