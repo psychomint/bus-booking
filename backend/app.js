@@ -8,6 +8,10 @@ require('dotenv').config();
 
 require('./models');
 
+//const usersRoute = require('./routes/usersRoutes');
+const operatorRoute = require('./routes/operatorsRoutes');
+app.use('/api/v1/operator',operatorRoute)
+
 
 const port = process.env.PORT;
 
