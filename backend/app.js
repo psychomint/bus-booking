@@ -18,6 +18,14 @@ app.use('/api/v1/admin/buses',busesRoute);
 const busSeatsRoutes = require('./routes/busSeatsRoutes');
 app.use('/api/v1/admin/bus-seats',busSeatsRoutes);
 
+const routeRoutes = require('./routes/routeRoutes');
+app.use('/api/v1/admin/routes', routeRoutes);
+
+const stopRoutes = require('./routes/stopsRoutes');
+app.use('/api/v1/admin', stopRoutes);
+
+const scheduleRoutes = require('./routes/schedulesRoutes');
+app.use('/api/v1/admin/schedule',scheduleRoutes);
 
 const port = process.env.PORT;
 

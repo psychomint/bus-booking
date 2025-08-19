@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const busesController = require('../controllers/buesController');
+const busesController = require('../controllers/busesController');
 
 router.post('/',busesController.postBus)
 router.get('/:id',busesController.getBusById);
