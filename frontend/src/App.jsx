@@ -1,7 +1,16 @@
+import Navbar from "./components/Navbar";
+
 export default function App () {
     return(
-         <div className="text-4xl bg-amber-600">
-            React is working
+         <div className="">
+            <Navbar/>
+           
+            <div className="h-500">
+
+            </div>
+            <div className="h-500">
+
+            </div>
         </div>
     )
 }
